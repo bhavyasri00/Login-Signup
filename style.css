@@ -1,0 +1,161 @@
+body {
+  background-color: #313154;
+}
+.signup-box {
+  width: 460px;
+  height: 670px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+.signup-box h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+form {
+  width: 350px;
+  margin-left: 20px;
+}
+form label {
+  display: flex;
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 18px;
+}
+form input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  outline: invert;
+}
+input[type="button"] {
+  width: 105%;
+  font-size: 1rem;
+  margin-left: 2px;
+  margin-top: 30px;
+  border: none;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+input[type="button"]:active {
+  background-color: chocolate;
+}
+p,
+a {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+}
+a:active {
+  color: crimson;
+}
+/* Logi page styling */
+.login-box {
+  width: 500px;
+  height: 480px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+}
+.login-box form {
+  width: 400px;
+  margin-left: 20px;
+}
+.login-box input {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+.login-box label {
+  display: flex;
+  font-style: italic;
+  font-size: 18px;
+}
+.login-box h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 20px;
+}
+.login-box input[type="button"] {
+  margin-top: 20px;
+  width: 105%;
+  height: 40px;
+  background-color: forestgreen;
+}
+.login-box input[type="button"]:active {
+  background-color: darkmagenta;
+}
+.login-box p {
+  color: black;
+  text-align: end;
+  font-size: medium;
+  cursor: pointer;
+}
+/* icons styling */
+.icons {
+  text-align: center;
+  padding: 20px;
+}
+
+.icons h4 {
+  font-size: large;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.icons a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
+}
+
+.bx {
+  font-size: 50px;
+  transition: transform 0.3s ease;
+}
+.icon-image {
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  padding: 4px;
+  margin-top: 10px;
+}
+.icon-image:hover {
+  transform: scale(1.2);
+}
+.bxl-twitter {
+  color: darkblue;
+}
+.bxl-github {
+  color: black;
+}
+
+.bx:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .signup-box,
+  .login-box {
+    border-radius: 0;
+  }
+
+  form {
+    margin: 0 10px;
+  }
+
+  form input,
+  form label {
+    margin-top: 15px;
+  }
+
+  input[type="button"] {
+    margin-top: 15px;
+  }
+}

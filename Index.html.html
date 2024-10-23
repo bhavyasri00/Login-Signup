@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Login</h1>
+      <form>
+        <label>Email</label>
+        <input type="email" name="email" id="email" required="required" />
+        <label>Password</label>
+        <input type="password" id="password" required="required" />
+        <p>Forget Email/Password?</p>
+        <input
+          type="button"
+          value="Submit"
+          onclick="alert(`Login Successfully`)"
+        />
+        <div class="icons">
+          <h4>Or Login using</h4>
+          <a href="#"><img src="image2.jpg" alt="" class="icon-image" /></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <p>Not have an account? <a href="signup.html">Signup Here!</a></p>
+  </body>
+</html>

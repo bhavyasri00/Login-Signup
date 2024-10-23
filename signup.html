@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <form>
+        <label>Firstname</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Firstname"
+          required="required"
+        />
+        <label>Lastname</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="lastname"
+          required="required"
+        />
+
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="e.g:123@gmail.com"
+          required="required"
+        />
+        <label>Password</label>
+        <input type="password" id="password" required="required" />
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" required="required" />
+        <input type="button" value="Submit" onclick="validate()" />
+        <div class="icons">
+          <h4>OR</h4>
+          <a href="#"><img src="image2.jpg" alt="" class="icon-image" /></a>
+
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+      </form>
+    </div>
+
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+    <script>
+      function validate() {
+        const firstname = document.getElementById("firstname").value;
+        const lastname = document.getElementById("lastname").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
+
+        if (
+          !firstname ||
+          !lastname ||
+          !email ||
+          !password ||
+          !confirmPassword
+        ) {
+          alert(`please fill all required fields.`);
+        } else if (password !== confirmPassword) {
+          alert(`passwords doesn't match.`);
+        } else {
+          alert("you are successfully registered!");
+        }
+      }
+    </script>
+  </body>
+</html>
